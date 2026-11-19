@@ -1,0 +1,12 @@
+checagem,valor,criterio,veredito,obs
+soma dos pesos por choque,min=1.000000 max=1.000000,identicamente 1,OK,n=198
+intervalo de w_a,"[0.087, 0.978]","dentro de [0,1]",OK,w_a=0 no ultimo dia do trimestre
+conservacao do choque total,-0.0000 vs -0.0000 bp,somas iguais,OK,
+trimestres sem reuniao,0,esperado 0,OK,"92 trimestres uteis, 198 reunioes"
+media de fator_nivel,0.02 bp (dp=9.43),media ~ 0,OK,
+rho(1) de fator_nivel,+0.478,"nulo mecanico: mediana +0.272, IC95% [+0.078, +0.438]",RESSALVA,soma ingenua +0.137; excesso sobre a mediana +0.206
+media de fator_trajetoria,-0.37 bp (dp=19.05),media ~ 0,OK,
+rho(1) de fator_trajetoria,+0.425,"nulo mecanico: mediana +0.267, IC95% [+0.080, +0.440]",OK,soma ingenua -0.045; excesso sobre a mediana +0.158
+ortogonalidade apos agregacao,-0.0222,"|corr| < 0,05",OK,era -0.0000 no nivel do evento
+"corr(ponderado, soma ingenua)",0.697,alta mas < 1,OK,dp 9.43 vs 12.20 bp
+"corr(calendario, dias uteis)",0.9999,"> 0,99",OK,max |dif| = 0.63 bp

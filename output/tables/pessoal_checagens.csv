@@ -1,0 +1,10 @@
+checagem,valor,criterio,veredito,obs
+arquivos lidos,33,"ITR e DFP, base ind",OK,
+escala nao mapeada,0 linhas,zero,OK,"ESCALA_MOEDA fora de ['MIL', 'UNIDADE', 'MILHAO']"
+escalas encontradas,"{'MIL': 36451, 'UNIDADE': 3385}",normalizadas para reais,OK,
+elos de cadeia quebrados,1245 de 39836,menos de 5%,OK,janela fora de 2 a 4 meses; observacao descartada
+fluxos nao positivos,7159,informativo,OK,zeros e negativos descartados
+serie final,"8468 obs, 160 empresas, 2011-2026",painel casado por CNPJ,OK,
+equilibrio entre trimestres,Q1 2166 | Q2 2167 | Q3 2137 | Q4 1998,sem trimestre ausente,OK,
+fechamento anual,"96.7% dentro de 0,1%",acima de 90%,OK,1938 exercicios completos; erro mediano 0.0e+00; 55 acima de 1%
+estabilidade agregada,variacao mediana 6.3%,abaixo de 25%,OK,soma trimestral de pessoal no painel

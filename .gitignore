@@ -1,0 +1,33 @@
+# --- Texto do paper (fora do repositório por ora) ---
+Working_paper/
+output/_v12_pages/
+
+# --- Dados derivados da Economatica (licença não permite redistribuição) ---
+data/interim/estoques/
+data/interim/estoques_demonstrativos.csv
+data/processed/painel_regressao.csv
+data/processed/painel_replicacao.csv
+
+# --- LaTeX auxiliares ---
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# --- Python / ambiente ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.env
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+desktop.ini
+logs/

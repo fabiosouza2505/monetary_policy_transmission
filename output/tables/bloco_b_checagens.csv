@@ -1,0 +1,15 @@
+bloco,checagem,valor,criterio,veredito,obs
+B.0 construcao,"corr(f1 em t+1, meta decidida)",0.9997,proxima de 1 — a termo cobre o intervalo da decisao,OK,inclinacao=0.997
+B.0 construcao,spread CDI-Selic implicito,-12.4 bp (dp=11.6),"pequeno, negativo e estavel",OK,
+B.0 construcao,"corr(f1 em t0, meta decidida)",0.9996,alta mas inferior a de t+1 — parte da decisao e surpresa,OK,
+B.1 media,surpresa_nivel,media=-0.63 bp (dp=9.3),media estatisticamente nula,OK,"t=-0.96, p=0.339"
+B.1 media,fator_nivel,media=-0.00 bp (dp=8.8),media estatisticamente nula,OK,"t=-0.00, p=1.000"
+B.1 media,fator_trajetoria,media=-0.00 bp (dp=16.4),media estatisticamente nula,OK,"t=-0.00, p=1.000"
+B.2 autocorrelacao,fator_nivel,rho(1)=-0.035,ausente,OK,Ljung-Box(4) p=0.415
+B.2 autocorrelacao,fator_trajetoria,rho(1)=0.037,ausente,OK,Ljung-Box(4) p=0.842
+B.3 antecipacao,|fator_nivel|: manutencao vs mudanca,4.3 vs 6.3 bp,menor quando a meta e mantida,OK,"t=-1.99, p=0.048, n=69/129"
+B.3 antecipacao,"corr(fator_nivel, variacao da meta)",0.198,positiva e longe de 1,OK,
+B.4 trajetoria,episodios de comunicacao,4 reunioes,existencia de episodios,OK,2003-09-17; 2007-04-18; 2013-11-27; 2021-06-16
+B.5 ativos,"corr(fator_nivel, ret_ibov)",-0.182,sinal esperado: negativo,OK,n=198
+B.5 ativos,"corr(fator_nivel, ret_usdbrl)",-0.146,sinal esperado: negativo,OK,n=198
+B.6 janela,"corr(janela 1 dia, janela 2 dias) em f1",0.800 (dp relativo 1.30),estabilidade entre janelas,OK,n=198
